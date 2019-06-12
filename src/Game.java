@@ -16,7 +16,7 @@ public class Game extends JPanel {
     Player player = new Player(this);
     public static ArrayList<Ball> balls= new ArrayList<Ball>();
     public static int count;
-    Image bg = new ImageIcon("/Users/kiran/IdeaProjects/game008/images/piib22keeih11.png").getImage();
+    Image bg = new ImageIcon("images/piib22keeih11.png").getImage();
 
 
     public Game() {
@@ -110,7 +110,7 @@ public class Game extends JPanel {
 
     }
     public void gameOver() {
-        JOptionPane.showMessageDialog(this, "Game Over", "Game Over", JOptionPane.YES_NO_OPTION);
+        JOptionPane.showMessageDialog(this, "That's a Scam! My wife doesn't believe me. WHADDAMA GONNA DO!", "Game Over", JOptionPane.YES_NO_OPTION);
         System.exit(ABORT);
     }
 }

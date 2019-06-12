@@ -16,7 +16,7 @@ public class Player {
     boolean up = false;
     boolean down = false;
     private Game game;
-    private Image img = new ImageIcon("/Users/kiran/IdeaProjects/game008/images/1519887564269.png").getImage();
+    private Image img = new ImageIcon("images/1519887564269.png").getImage();
 
 
     public Player(Game game) {

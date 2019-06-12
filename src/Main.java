@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
 
 
-        JFrame frame = new JFrame("Advanced Game");
+        JFrame frame = new JFrame("Bitconnect the Game");
         Game game = new Game();
         frame.add(game);
         frame.setSize(700, 700);

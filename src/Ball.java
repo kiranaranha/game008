@@ -14,7 +14,7 @@ public class Ball {
     int DIAMETER = 27;
     int speed =1;
     private Game game;
-    private Image img = new ImageIcon("/Users/kiran/IdeaProjects/game008/images/images.png").getImage();
+    private Image img = new ImageIcon("images/images.png").getImage();
 
     public Ball(Game game, int xstart, int ystart,int xa, int ya) {
         /* The reason we have a "Game" argument for the Ball object is so that we can later on call game.getHeight()
@@ -31,16 +31,6 @@ public class Ball {
     void move() {
         if(speed==1) {
             if (x + xa < 0)
-                xa = 2;
-            if (x + xa > game.getWidth() - 20)
-                xa = -2;
-            if (y + ya < 0)
-                ya = 2;
-            if (y + ya > game.getHeight() - 20)
-                ya = -2;
-        }
-        else{
-            if (x + xa < 0)
                 xa = 3;
             if (x + xa > game.getWidth() - 20)
                 xa = -3;
@@ -48,6 +38,16 @@ public class Ball {
                 ya = 3;
             if (y + ya > game.getHeight() - 20)
                 ya = -3;
+        }
+        else{
+            if (x + xa < 0)
+                xa = 4;
+            if (x + xa > game.getWidth() - 20)
+                xa = -4;
+            if (y + ya < 0)
+                ya = 4;
+            if (y + ya > game.getHeight() - 20)
+                ya = -4;
         }
         if (collision())
             game.gameOver();
